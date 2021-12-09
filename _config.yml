@@ -13,27 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+title                    : Ducky Dares Archives
+email                    : duckydares@protonmail.com
+description              : >- # this means to ignore newlines until "baseurl:"
+  An archival of all the things I, Ducky, have experienced, engaged in, and learned. Consider this site
+  a repository of coding projects, learning templates for various fields, and a personal blog.
+url                      : https://duckydares.duckiverse # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+twitter_username         : PimpingTakis
+github_username          : duckydares
+minimal_mistakes_skin    : dark
+search                   : true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 0 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
+  - .htaccess
   - _pages
 
 # Exclude from processing.
@@ -56,36 +57,52 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Ducky"
+  avatar : "/assets/images/toyko_revengers_mikey_1.png"
+  bio    : "Holding it down for the team while trying not to lose myself."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/duckydares"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/duckydares"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+# Collections
+collections:
+  experiences:
+    output: true
+    permalink: /:collection/:path/
+  learning:
+    output: true
+    permalink: /:collection/:path/
+  music:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
@@ -94,19 +111,46 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
-
+      layout: default
+      author_profile: false
+  # experiences
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: default
+      author_profile: false
+  # learning
+  - scope:
+      path: ""
+      type: learning
+    values:
+      layout: default
+      author_profile: false
+  # music
+  - scope:
+      path: ""
+      type: music
+    values:
+      layout: default
+      author_profile: false
+  # projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      author_profile: false
 category_archive:
   type: liquid
   path: /categories/
