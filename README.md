@@ -1,6 +1,7 @@
-# Minimal Mistakes remote theme starter
+# Ducky Dares To Archive
+#### Last Updated: 2022.02.2022
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+This is a public repository documenting the various endeavors I pursue. It started as a fork from [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes) and will continue to grow into its own shape.
 
 Contains basic configuration to get you a site with:
 
@@ -17,6 +18,10 @@ Contains basic configuration to get you a site with:
 Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
 ---
+
+## TODO
+- [ ] Replace sample content with my own over time
+- [ ] Add structures for different project posts
 
 ## Troubleshooting
 
