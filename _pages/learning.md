@@ -9,6 +9,6 @@ author_profile: false
 
 {% include base_path %}
 
-{% for post in site.learning %}
+{% for post in site.categories.learning %}
   {% include archive-single.html %}
 {% endfor %}
