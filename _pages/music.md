@@ -13,6 +13,6 @@ This page will primarily serve as a place to share my playlists. In addition, it
 
 {% include base_path %}
 
-{% for post in site.music %}
+{% for post in site.categories.music %}
   {% include archive-single.html %}
 {% endfor %}

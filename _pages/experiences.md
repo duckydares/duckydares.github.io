@@ -11,6 +11,6 @@ You know...just sharing the shit that makes me feel alive. I see this page as a 
 
 {% include base_path %}
 
-{% for post in site.experiences %}
+{% for post in site.categories.experiences %}
   {% include archive-single.html %}
 {% endfor %}

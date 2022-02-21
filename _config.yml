@@ -13,27 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-<<<<<<< HEAD
-title: Ducky Dares Archives
-email: duckydares@protonmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Archives of Ducky. These archives contain code tutorials for projects and blog posts of discoveries and adventure.
-twitter_username: username
-github_username: duckydares
-minimal_mistakes_skin: default
-search: true
-=======
 title                    : Ducky Dares Archives
 email                    : duckydares@protonmail.com
 description              : >- # this means to ignore newlines until "baseurl:"
   An archival of all the things I, Ducky, have experienced, engaged in, and learned. Consider this site
   a repository of coding projects, learning templates for various fields, and a personal blog.
-url                      : https://duckydares.duckiverse # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://duckydares.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 twitter_username         : PimpingTakis
 github_username          : duckydares
 minimal_mistakes_skin    : dark
 search                   : true
->>>>>>> 90dae6ba088d43a9e8002cae7e337e9eed2d4b1c
 
 # Build settings
 markdown: kramdown

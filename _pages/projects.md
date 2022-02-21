@@ -11,6 +11,6 @@ This page serves to present all of the various things I've dared to question and
 
 {% include base_path %}
 
-{% for post in site.projects %}
+{% for post in site.project.projects %}
   {% include archive-single.html %}
 {% endfor %}
