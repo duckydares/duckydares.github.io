@@ -19,6 +19,10 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 ---
 
+## TODO
+- [ ] Replace sample content with my own over time
+- [ ] Add structures for different project posts
+
 ## Troubleshooting
 
 If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
