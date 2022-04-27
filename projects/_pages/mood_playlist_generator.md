@@ -5,8 +5,6 @@ permalink: /projects/mood-playlist-generator
 author_profile: false
 ---
 
-{% include base_path %}
-
 I love music. Only real heathens can't...  
 
 In that vien, I want to dabble more in the art. Here, I create a process for generating a set of songs from a given mood.
@@ -36,8 +34,10 @@ I will be developing online in the repository: [mood-music-generator](https://gi
 
 {% include mathjax.html %}
 
+{% include base_path %}
+
 {% for post in site.categories.projects %}
-  {% if post.url contains "mood-music-generator" %}
+  {% if post.url contains "mood-playlist-generator" %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}

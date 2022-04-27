@@ -2,6 +2,12 @@
     <iframe src="https://open.spotify.com/embed/track/{{ include.id }}"  
         frameborder="0" 
         allowtransparency="true" 
-        allow="encrypted-media">
+        allow="encrypted-media"
+        width="100%"
+        class="myFrame">
     </iframe>
 </div>
+
+<script type="text/javascript" language="javascript"> 
+    $('.myIframe').css('height', $(window).height()+'px');
+</script>

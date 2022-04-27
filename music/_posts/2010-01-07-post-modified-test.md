@@ -1,5 +1,5 @@
 ---
-title: "Post: Modified Date"
+title: "Music "
 last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
   - Blog
@@ -9,6 +9,7 @@ tags:
   - standard
 permalink: /music/test_post
 ---
+{% include spotify_playlist.html id="3jD5OM99kFNUrt4jYCXqdF" %}
 
 This post has been updated and should show a modified date if used in a layout.
 

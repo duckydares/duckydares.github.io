@@ -22,6 +22,7 @@ Replace sample content with your own and [configure as necessary](https://mmista
 ## TODO
 - [ ] Replace sample content with my own over time
 - [ ] Add structures for different project posts
+- [ ] Determine how to pages list in
 
 ## Troubleshooting
 
